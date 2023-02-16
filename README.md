@@ -21,20 +21,20 @@ When we talk about micro-frontends, we often use words like `HOST` and `REMOTE`.
 Often time a host can extend configuration, security, types, routing, and many other features to remotes, so that each remote does not have to implement them individually.
 
 ## ▪️ What will we be building?
-Project Description Here....
+In this workshop we are going to build a simple application which allows you to view a list of movies and then look at additional details about a select movie. The application will use React, javascript, bootstrap css, module federation, and webpack.
 
 ### Solution Structure
 For now we will keep the structure loose and simple:
 
 ```
-├─── 📁 host                > React Host
-│    ├─── 📁 layout         > Shared layout
-│    └─── 📁 pages          > Routing
+├─── 📁 host                > Wrapper application
+│    ├─── 📁 layout         > Application layout
+│    └─── 📁 pages          > Routing and pages
 │
 ├─── 📁 remotes
-│    ├─── 📁 home           > React Remote using JSX
-│    ├─── 📁 profile        > React Remote using Typescript
-│    └─── 📁 sample         > React Remote using JSX
+│    ├─── 📁 home           > React application using JSX
+│    ├─── 📁 movies         > React application using JSX
+│    └─── 📁 movie          > React application using JSX
 ```
 
 ## ▫️ Getting started
