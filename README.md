@@ -24,7 +24,7 @@ Often time a host can extend configuration, security, types, routing, and many o
 In this workshop we are going to build a simple application which allows you to view a list of movies and then look at additional details about a select movie. The application will use React, javascript, bootstrap css, module federation, and webpack.
 
 ### Solution Structure
-For now we will keep the structure loose and simple:
+For now we will keep the structure loose and simple to understand:
 
 ```
 .
@@ -56,4 +56,23 @@ For now we will keep the structure loose and simple:
 
 ## ▪️ Getting started
 
-First off we want to create a default package to manage the solution using npm. 
+1) First off we want to branch or fork this repository. 
+
+2) Secondly we want to create a default package to manage the solution using pnpm and setup pnpm to manage our workspaces. Open a terminal in this directory and execute 
+    ```
+    npm install -g pnpm
+    pnpm init
+    ``` 
+
+3) Next we want to create a few directories and populate them. 
+    ```
+    mkdir host
+    mkdir remotes
+    mkdir remotes/home
+    mkdir remotes/list-movies
+    mkdir remotes/view-movie
+    ```
+4) Now lets generate our host using create-react-app
+    ```
+    pnpm create react-app host
+    ```
