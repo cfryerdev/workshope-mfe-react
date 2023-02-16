@@ -37,6 +37,6 @@ For now we will keep the structure loose and simple:
 │    └─── 📁 movie          > React application using JSX
 ```
 
-## ▫️ Getting started
+## ▪️ Getting started
 
 First off we want to create a default package to manage the solution using npm. 
