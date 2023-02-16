@@ -31,10 +31,10 @@ For now we will keep the structure loose and simple:
 │    ├─── 📁 layout         > Application layout
 │    └─── 📁 pages          > Routing and pages
 │
-├─── 📁 remotes
-│    ├─── 📁 home           > React application using JSX
-│    ├─── 📁 movies         > React application using JSX
-│    └─── 📁 movie          > React application using JSX
+└─── 📁 remotes
+     ├─── 📁 home           > React application using JSX
+     ├─── 📁 movies         > React application using JSX
+     └─── 📁 movie          > React application using JSX
 ```
 
 ## ▪️ Getting started
