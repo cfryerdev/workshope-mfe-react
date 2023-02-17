@@ -95,7 +95,11 @@ For now we will keep the structure loose and simple to understand:
 
 12) tbd
 
-## Common Questions
+## ▪️ Time to run the solution!
+
+Information here...
+
+## ▪️ Common Questions
 Here are some common questions I am often asked:
 
 - **How often or under what circumstances would I create a new host?** Coming soon...
