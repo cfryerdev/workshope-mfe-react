@@ -14,11 +14,23 @@ This course should take 1-3 hours depending on your proficiency.
 
 Microfrontend architecture is an approach to breaking up your front-end into a set of independently deployable, loosely coupled applications and/or components. These applications are then assembled together to act as a single user experience, once deployed. We do this using a new technology called Module Federation. We have a single Host application which wraps up our single page applications represented as remotes.
 
+## ▪️ Module Federation
+
+Module Federation aims to solve the sharing of modules in a distributed system, by shipping those critical shared pieces as macro or as micro as you would like. It does this by pulling them out of the the build pipeline and out of your apps.
+
+More information here: [Module Federation](https://webpack.js.org/concepts/module-federation/)
+
 ### What are hosts and remotes?
 
 When we talk about micro-frontends, we often use words like `HOST` and `REMOTE`. A host is a parent application that ties all remotes together. A remote can be many things, but in the context of what we will be learning, a remote is essentially a single page react application. 
 
 Often time a host can extend configuration, security, types, routing, and many other features to remotes, so that each remote does not have to implement them individually.
+
+### Three ways of loading remotes
+
+- **Eager:** Load all remotes up front inside the host's webpack.config.js. Must have knowledge of all remotes at startup.
+- **Dynamic:** Load a single remote using React.Lazy on demand only when requested. Must have knowledge of only the requested remote when you view that page or component.
+- **Delegated:** Prefetch all remotes on load, but only load them when requested. Must have knowledge of all remotes on load, but they do not need to be available on load.
 
 ## ▪️ What will we be building?
 In this workshop we are going to build a simple application which allows you to view a list of movies and then look at additional details about a select movie. The application will use React, javascript, bootstrap css, module federation, and webpack.
