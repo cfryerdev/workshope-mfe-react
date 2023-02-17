@@ -89,15 +89,30 @@ For now we will keep the structure loose and simple to understand:
 
 9) tbd
 
-10) tbd
+10) Lets create our pnpm workspace so its easier to run and build our solution. In the root of the directory, create a file called `pnpm-workspace.yaml` and put the following inside:
+    ```
+    packages:
+      - host
+      - remotes/home
+      - remotes/list-movies
+      - remotes/view-movie
+    ```
 
 11) tbd
 
 12) tbd
 
+## ▪️ Building the UI....
+
+tbd
+
 ## ▪️ Time to run the solution!
 
-Information here...
+Its time to run the project! Open a terminal in the root of the solution and type:
+    ```
+    pnpm i
+    pnpm start
+    ```
 
 ## ▪️ Common Questions
 Here are some common questions I am often asked:
