@@ -42,8 +42,8 @@ For now we will keep the structure loose and simple to understand:
 │   │   ├── 📁 public
 │   │   ├── 📁 src
 │   │   │   ├── 📄 app.jsx
-│   │   │   ├── 📄 bootstrap.jsx
-│   │   │   └── 📄 index.jsx
+│   │   │   ├── 📄 bootstrap.js
+│   │   │   └── 📄 index.js
 │   │   ├── 📄 webpack.config.js
 │   │   └── 📄 package.json
 │   ├── 📁 list-movies
@@ -64,7 +64,7 @@ For now we will keep the structure loose and simple to understand:
     pnpm init
     ``` 
 
-3) Next we want to create a few directories and populate them. 
+3) Next we want to create a few directories that represents our solution structure. 
     ```
     mkdir host
     mkdir remotes
@@ -72,7 +72,13 @@ For now we will keep the structure loose and simple to understand:
     mkdir remotes/list-movies
     mkdir remotes/view-movie
     ```
-4) Now lets generate our host using create-react-app
+
+4) Now lets setup our host: First we want to copy down the minimal react mfe template from:
     ```
-    pnpm create react-app host
+    https://github.com/cfryerdev/mfe-react-template
     ```
+    _Put this in the `host` folder and take a moment to explore the directory and see whats inside._
+
+5) Lets configure the project we just copied and make sure it will function as a container for our remotes.
+
+6) Lets copy down the minimal react mfe template again into each of the remote folders. See step #4.
