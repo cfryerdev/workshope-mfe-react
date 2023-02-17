@@ -20,6 +20,8 @@ Module Federation aims to solve the sharing of modules in a distributed system, 
 
 More information here: [Module Federation](https://webpack.js.org/concepts/module-federation/)
 
+There are two main concepts to get your head around; the Host and the Remote's.
+
 ### What are hosts and remotes?
 
 When we talk about micro-frontends, we often use words like `HOST` and `REMOTE`. A host is a parent application that ties all remotes together. A remote can be many things, but in the context of what we will be learning, a remote is essentially a single page react application. 
