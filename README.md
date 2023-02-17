@@ -39,6 +39,8 @@ Often time a host can extend configuration, security, types, routing, and many o
 ## ▪️ What will we be building?
 In this workshop we are going to build a simple application which allows you to view a list of movies and then look at additional details about a select movie. The application will use React, javascript, bootstrap css, module federation, and webpack.
 
+![Mock Screens](./docs/mock_screens.jpg)
+
 ### Solution Structure
 For now we will keep the structure loose and simple to understand:
 
