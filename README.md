@@ -1,6 +1,6 @@
 ![Module Federation](./docs/module_federation_banner.jpg)
 
-# Workshop: Basic Microfrontends in React
+# Workshop: Microfrontend Solution Architecture in React
 A workshop geared to help you create your first microfrontend using react and module federation. This course will give you the basics of the technology that makes it possible and how it all works together. All of the code will be operating in a monorepo for convenience and ease of adoption. 
 
 ### Time frame
