@@ -14,6 +14,8 @@ This course should take 1-3 hours depending on your proficiency.
 
 Microfrontend architecture is an approach to breaking up your front-end into a set of independently deployable, loosely coupled applications and/or components. These applications are then assembled together to act as a single user experience, once deployed. We do this using a new technology called Module Federation. We have a single Host application which wraps up our single page applications represented as remotes.
 
+![Microfrontends](./docs/microfrontends.jpg)
+
 ## ▪️ Module Federation
 
 Module Federation aims to solve the sharing of modules in a distributed system, by shipping those critical shared pieces as macro or as micro as you would like. It does this by pulling them out of the the build pipeline and out of your apps.
