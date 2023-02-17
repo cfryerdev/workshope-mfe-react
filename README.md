@@ -128,6 +128,8 @@ pnpm i
 pnpm start
 ```
 
+It should all spin up in parallel and you can visit: [https://localhost:3000/](https://localhost:3000/)
+
 ## ▪️ Common Questions
 Here are some common questions I am often asked:
 
