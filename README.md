@@ -123,10 +123,10 @@ tbd
 ## ▪️ Time to run the solution!
 
 Its time to run the project! Open a terminal in the root of the solution and type:
-    ```
-    pnpm i
-    pnpm start
-    ```
+```
+pnpm i
+pnpm start
+```
 
 ## ▪️ Common Questions
 Here are some common questions I am often asked:
