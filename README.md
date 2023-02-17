@@ -82,3 +82,22 @@ For now we will keep the structure loose and simple to understand:
 5) Lets configure the project we just copied and make sure it will function as a container for our remotes.
 
 6) Lets copy down the minimal react mfe template again into each of the remote folders. See step #4.
+
+7) tbd
+
+8) tbd
+
+9) tbd
+
+10) tbd
+
+11) tbd
+
+12) tbd
+
+## Common Questions
+Here are some common questions I am often asked:
+
+- **How often or under what circumstances would I create a new host?** Coming soon...
+- **Can I use other frameworks instead of React?** Coming soon...
+- **What if I want to use NextJS or Remix for my host?** Coming soon...
