@@ -93,7 +93,7 @@ For now we will keep the structure loose and simple to understand:
 
 4) Now lets setup our host: First we want to copy down the minimal react mfe template from:
     ```
-    https://github.com/cfryerdev/mfe-react-template
+    https://github.com/cfryerdev/mfe-reactjs-template
     ```
     _Put this in the `host` folder and take a moment to explore the directory and see whats inside._
 
