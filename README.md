@@ -143,7 +143,7 @@ packages:
   - remotes/view-movie
 ```
 
-13) Lets create package.json in our root directory, this will have the scripts we need for local development and building...
+13) Lets update package.json in our root directory, this will have the scripts we need for local development and building...
 
 ```
 {
