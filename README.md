@@ -92,99 +92,99 @@ For now we will keep the structure loose and simple to understand:
     ```
 
 4) Now lets setup our host: First we want to copy down the minimal react mfe template from:
-    ```
+```
     https://github.com/cfryerdev/mfe-reactjs-template
-    ```
-    _Put this in the `host` folder and take a moment to explore the directory and see whats inside._
+```
+_Put this in the `host` folder and take a moment to explore the directory and see whats inside._
 
 5) Lets configure the project we just copied and make sure it will function as a container for our remotes.
     - First we want to go into `webpack.config.js` and look at the three main variables at the top, by default this is setup for host.
     - Since this is the host, we dont really have to do much else here.
 
 6) Lets copy down the minimal react mfe template again into each of the remote folders. Lets start with the Home remote...
-    ```
+```
     https://github.com/cfryerdev/mfe-reactjs-template
-    ```
-    _Put this in the `remotes/home` folder._
+```
+_Put this in the `remotes/home` folder._
 
 7) Lets configure the project we just copied and make sure it will function as a a remote.
     - First we want to go into `webpack.config.js` and look at the three main variables at the top, by default this is setup for host, so we need to name this `remote_home` by using the `_packageName` variable.
     - We need to update the `_port` variable to `3001`. We increment this for each remote.
 
 8) Lets copy down the minimal react mfe template again into each of the remote folders. Lets setup the List Movies remote...
-    ```
+```
     https://github.com/cfryerdev/mfe-reactjs-template
-    ```
-    _Put this in the `remotes/list-movies` folder._
+```
+_Put this in the `remotes/list-movies` folder._
 
 9) Lets configure the project we just copied and make sure it will function as a a remote.
     - First we want to go into `webpack.config.js` and look at the three main variables at the top, by default this is setup for host, so we need to name this `remote_listmovies` by using the `_packageName` variable.
     - We need to update the `_port` variable to `3002`. We increment this for each remote.
 
 10) Lets copy down the minimal react mfe template again into each of the remote folders. Lets setup the View Movie remote...
-    ```
+```
     https://github.com/cfryerdev/mfe-reactjs-template
-    ```
-    _Put this in the `remotes/view-movie` folder._
+```
+_Put this in the `remotes/view-movie` folder._
 
 11) Lets configure the project we just copied and make sure it will function as a a remote.
     - First we want to go into `webpack.config.js` and look at the three main variables at the top, by default this is setup for host, so we need to name this `remote_viewmovie` by using the `_packageName` variable.
     - We need to update the `_port` variable to `3003`. We increment this for each remote.
 
 12) Lets create our pnpm workspace so its easier to run and build our solution. In the root of the directory, create a file called `pnpm-workspace.yaml` and put the following inside:
-    ```
+```
     packages:
       - host
       - remotes/home
       - remotes/list-movies
       - remotes/view-movie
-    ```
+```
 
 13) Lets create package.json in our root directory, this will have the scripts we need for local development and building...
 
-    ```
-    {
-        "name": "workshope-mfe-react",
-        "version": "1.0.0",
-        "scripts": {
-            "install": "",
-            "start": "concurrently \"npm run start:home\" \"npm run start:list-movies\" \"npm run start:view-movie\" \"npm run start:host\"",
+```
+{
+    "name": "workshope-mfe-react",
+    "version": "1.0.0",
+    "scripts": {
+        "install": "",
+        "start": "concurrently \"npm run start:home\" \"npm run start:list-movies\" \"npm run start:view-movie\" \"npm run start:host\"",
 
-            "install:host": "cd host && npm install",
-            "start:host": "cd host && npm start",
-            "build:host": "cd host && npm run build",
+        "install:host": "cd host && npm install",
+        "start:host": "cd host && npm start",
+        "build:host": "cd host && npm run build",
 
-            "install:home": "cd remotes && cd home && npm install",
-            "start:home": "cd remotes && cd home && npm start",
-            "build:home": "cd remotes && cd home && npm run build",
+        "install:home": "cd remotes && cd home && npm install",
+        "start:home": "cd remotes && cd home && npm start",
+        "build:home": "cd remotes && cd home && npm run build",
 
-            "install:list-movies": "cd remotes && cd list-movies && npm install",
-            "start:list-movies": "cd remotes && cd list-movies && npm start",
-            "build:list-movies": "cd remotes && cd list-movies && npm run build",
+        "install:list-movies": "cd remotes && cd list-movies && npm install",
+        "start:list-movies": "cd remotes && cd list-movies && npm start",
+        "build:list-movies": "cd remotes && cd list-movies && npm run build",
 
-            "install:view-movie": "cd remotes && cd view-movie && npm install",
-            "start:view-movie": "cd remotes && cd view-movie && npm start",
-            "build:view-movie": "cd remotes && cd view-movie && npm run build"
-        },
-        "dependencies": {
-            "concurrently": "^7.0.0"
-        }
+        "install:view-movie": "cd remotes && cd view-movie && npm install",
+        "start:view-movie": "cd remotes && cd view-movie && npm start",
+        "build:view-movie": "cd remotes && cd view-movie && npm run build"
+    },
+    "dependencies": {
+        "concurrently": "^7.0.0"
     }
-    ```
+}
+```
 
 14) We should now be able to run the project and make sure each stand up correctly:
-    ```
+```
     pnpm i
     pnpm start
-    ```
+```
 
-    You should be able to look through the console and see all three are available. Click the following urls and make sure they display "React Minimal MFE Template":
+You should be able to look through the console and see all three are available. Click the following urls and make sure they display "React Minimal MFE Template":
     - http://localhost:3000
     - http://localhost:3001
     - http://localhost:3002
     - http://localhost:3003
 
-    If these are all returning correctly, move on, otherwise re-assess the steps above or look at the troubleshooting section.
+If these are all returning correctly, move on, otherwise re-assess the steps above or look at the troubleshooting section.
 
 15) We should be ready to start building our UI and see how it all ties together!
 
