@@ -185,7 +185,7 @@ You should be able to look through the console and see all three are available. 
 - [https://localhost:3002/](http://localhost:3002)
 - [https://localhost:3003/](http://localhost:3003)
 
-If these are all returning correctly, move on, otherwise re-assess the steps above or look at the troubleshooting section.
+If these are not all returning correctly, re-assess the steps above or look at the troubleshooting section.
 
 15) We should be ready to start building our UI and see how it all ties together!
 
