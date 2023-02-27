@@ -137,10 +137,10 @@ _Put this in the `remotes/view-movie` folder._
 12) Lets create our pnpm workspace so its easier to run and build our solution. In the root of the directory, create a file called `pnpm-workspace.yaml` and put the following inside:
 ```
 packages:
-    - host
-    - remotes/home
-    - remotes/list-movies
-    - remotes/view-movie
+  - host
+  - remotes/home
+  - remotes/list-movies
+  - remotes/view-movie
 ```
 
 13) Lets create package.json in our root directory, this will have the scripts we need for local development and building...
