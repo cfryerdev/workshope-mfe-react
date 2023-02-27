@@ -1,4 +1,5 @@
 # Site Settings
 title                    : "Workshop: MFE in React"
 description              : "A workshop geared to help you create your first microfrontend using React and Webpack"
+avatar: "/docs/icon.png"
 theme: jekyll-theme-tactile
