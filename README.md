@@ -180,10 +180,10 @@ _Put this in the `remotes/view-movie` folder._
 
 You should be able to look through the console and see all three are available. Click the following urls and make sure they display `"React Minimal MFE Template"`:
 
-- http://localhost:3000
-- http://localhost:3001
-- http://localhost:3002
-- http://localhost:3003
+- [https://localhost:3000/](http://localhost:3000)
+- [https://localhost:3001/](http://localhost:3001)
+- [https://localhost:3002/](http://localhost:3002)
+- [https://localhost:3003/](http://localhost:3003)
 
 If these are all returning correctly, move on, otherwise re-assess the steps above or look at the troubleshooting section.
 
