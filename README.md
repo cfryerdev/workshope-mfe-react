@@ -75,6 +75,9 @@ For now we will keep the structure loose and simple to understand:
 ## ▪️ Getting started
 
 1) First off we want to branch or fork this repository. 
+```
+https://github.com/cfryerdev/workshope-mfe-react
+```
 
 2) Secondly we want to create a default package to manage the solution using pnpm and setup pnpm to manage our workspaces. Open a terminal in this directory and execute 
 ```
