@@ -1,4 +1,4 @@
-![Module Federation](./docs/module_federation_banner.jpg)
+![Module Federation](./docs/module_federation_banner.png)
 
 # Workshop: Microfrontend Solution Architecture in React
 A workshop geared to help you create your first microfrontend using react and module federation. This course will give you the basics of the technology that makes it possible and how it all works together. All of the code will be operating in a monorepo for convenience and ease of adoption. 
@@ -14,7 +14,7 @@ This course should take 1-3 hours depending on your proficiency.
 
 Microfrontend architecture is an approach to breaking up your front-end into a set of independently deployable, loosely coupled applications and/or components. These applications are then assembled together to act as a single user experience, once deployed. We do this using a new technology called Module Federation. We have a single Host application which wraps up our single page applications represented as remotes.
 
-![Microfrontends](./docs/microfrontends.jpg)
+![Microfrontends](./docs/microfrontends.png)
 
 ## ▪️ Module Federation
 
@@ -39,7 +39,7 @@ Often time a host can extend configuration, security, types, routing, and many o
 ## ▪️ What will we be building?
 In this workshop we are going to build a simple application which allows you to view a list of movies and then look at additional details about a select movie. The application will use React, javascript, bootstrap css, module federation, and webpack.
 
-![Mock Screens](./docs/mock_screens.jpg)
+![Mock Screens](./docs/mock_screens.png)
 
 ### Solution Structure
 For now we will keep the structure loose and simple to understand:
