@@ -77,19 +77,19 @@ For now we will keep the structure loose and simple to understand:
 1) First off we want to branch or fork this repository. 
 
 2) Secondly we want to create a default package to manage the solution using pnpm and setup pnpm to manage our workspaces. Open a terminal in this directory and execute 
-    ```
-    npm install -g pnpm
-    pnpm init
-    ``` 
+```
+npm install -g pnpm
+pnpm init
+``` 
 
 3) Next we want to create a few directories that represents our solution structure. 
-    ```
-    mkdir host
-    mkdir remotes
-    mkdir remotes/home
-    mkdir remotes/list-movies
-    mkdir remotes/view-movie
-    ```
+```
+mkdir host
+mkdir remotes
+mkdir remotes/home
+mkdir remotes/list-movies
+mkdir remotes/view-movie
+```
 
 4) Now lets setup our host: First we want to copy down the minimal react mfe template from:
 ```
