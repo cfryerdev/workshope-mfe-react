@@ -203,6 +203,10 @@ pnpm start
 
 It should all spin up in parallel and you can visit: [https://localhost:3000/](https://localhost:3000/)
 
+## Solution Review
+
+Now lets sit and talk about what we just built and the WHY behind the patterns you saw.
+
 ## ▪️ Common Questions
 Here are some common questions I am often asked:
 
