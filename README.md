@@ -178,7 +178,7 @@ _Put this in the `remotes/view-movie` folder._
     pnpm start
 ```
 
-You should be able to look through the console and see all three are available. Click the following urls and make sure they display "React Minimal MFE Template":
+You should be able to look through the console and see all three are available. Click the following urls and make sure they display `"React Minimal MFE Template"`:
 
 - http://localhost:3000
 - http://localhost:3001
