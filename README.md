@@ -96,7 +96,7 @@ mkdir remotes/view-movie
 
 4) Now lets setup our host: First we want to copy down the minimal react mfe template from:
 ```
-    https://github.com/cfryerdev/mfe-reactjs-template
+https://github.com/cfryerdev/mfe-reactjs-template
 ```
 _Put this in the `host` folder and take a moment to explore the directory and see whats inside._
 
@@ -106,7 +106,7 @@ _Put this in the `host` folder and take a moment to explore the directory and se
 
 6) Lets copy down the minimal react mfe template again into each of the remote folders. Lets start with the Home remote...
 ```
-    https://github.com/cfryerdev/mfe-reactjs-template
+https://github.com/cfryerdev/mfe-reactjs-template
 ```
 _Put this in the `remotes/home` folder._
 
@@ -116,7 +116,7 @@ _Put this in the `remotes/home` folder._
 
 8) Lets copy down the minimal react mfe template again into each of the remote folders. Lets setup the List Movies remote...
 ```
-    https://github.com/cfryerdev/mfe-reactjs-template
+https://github.com/cfryerdev/mfe-reactjs-template
 ```
 _Put this in the `remotes/list-movies` folder._
 
@@ -126,7 +126,7 @@ _Put this in the `remotes/list-movies` folder._
 
 10) Lets copy down the minimal react mfe template again into each of the remote folders. Lets setup the View Movie remote...
 ```
-    https://github.com/cfryerdev/mfe-reactjs-template
+https://github.com/cfryerdev/mfe-reactjs-template
 ```
 _Put this in the `remotes/view-movie` folder._
 
@@ -136,11 +136,11 @@ _Put this in the `remotes/view-movie` folder._
 
 12) Lets create our pnpm workspace so its easier to run and build our solution. In the root of the directory, create a file called `pnpm-workspace.yaml` and put the following inside:
 ```
-    packages:
-      - host
-      - remotes/home
-      - remotes/list-movies
-      - remotes/view-movie
+packages:
+    - host
+    - remotes/home
+    - remotes/list-movies
+    - remotes/view-movie
 ```
 
 13) Lets create package.json in our root directory, this will have the scripts we need for local development and building...
@@ -177,8 +177,8 @@ _Put this in the `remotes/view-movie` folder._
 
 14) We should now be able to run the project and make sure each stand up correctly:
 ```
-    pnpm i
-    pnpm start
+pnpm i
+pnpm start
 ```
 
 You should be able to look through the console and see all three are available. Click the following urls and make sure they display `"React Minimal MFE Template"`:
