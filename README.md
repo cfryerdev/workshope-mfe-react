@@ -226,7 +226,11 @@ const Routes = () => (
 export default Routes;
 ```
 
-This will give us some routes that we can use to navigate between remotes.
+This will give us some routes that we can use to navigate between remotes. Next we need to add a quick utility and add a few pages. Lets start by adding our dynamic loading remotes script. Create a file called `remote-util.js` and put the following within it:
+
+```
+tbd
+```
 
 ## ▪️ Time to run the solution!
 
