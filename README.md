@@ -194,7 +194,39 @@ If these are not all returning correctly, re-assess the steps above or look at t
 
 ## ▪️ Building the UI....
 
-tbd
+For this example, we are going to just use something drop in and simple; bootstrap. Lets open the `host/src/` and add the file `routes.jsx` and add the followings line
+```
+import { Routes, Route } from "react-router";
+
+const HomePage = () => {
+    return (<>Home Page</>)
+};
+
+const ListMoviesPage = () => {
+    return (<>List Movies Page</>)
+};
+
+const ViewMoviePage = ({ id }) => {
+    return (<>View Movie Page</>)
+};
+
+const NotFoundPage = () => {
+    return (<>Home Page</>)
+};
+
+const Routes = () => (
+  <Routes>
+    <Route path="/" element={<HomePage />} />
+    <Route path="/movies" element={<ListMoviesPage />} />
+    <Route path="/movies/:id" element={<ViewMoviePage />} />
+    <Route path="*" element={<NotFoundPage />} />
+  </Routes>
+);
+
+export default Routes;
+```
+
+This will give us some routes that we can use to navigate between remotes.
 
 ## ▪️ Time to run the solution!
 
