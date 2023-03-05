@@ -225,7 +225,7 @@ const NotFoundPage = () => {
     return (<>Home Page</>)
 };
 
-const Routes = () => (
+const Router = () => (
   <Routes>
     <Route path="/" element={<HomePage />} />
     <Route path="/movies" element={<ListMoviesPage />} />
@@ -234,7 +234,7 @@ const Routes = () => (
   </Routes>
 );
 
-export default Routes;
+export default Router;
 ```
 
 Lets now update our `host/src/` file `app.jsx` to use the router we just added:
