@@ -240,6 +240,7 @@ export default Router;
 Lets now update our `host/src/` file `app.jsx` to use the router we just added:
 
 ```
+import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import Routing from "./routes";
 
@@ -254,14 +255,16 @@ const App = () => {
 export default App;
 ```
 
+This gives us a few pages we can explore by going to the paths above. Lets update each remote's `app.jsx` to return something unique.
+
+![Mapp.jsx Updates](./docs/app_jsx_updates.png)
+
 This will give us some routes that we can use to navigate between remotes. Next we need to add a quick utility and add a few pages. Lets start by adding our dynamic loading remotes script. Create a file called `dynamic-remotes.jsx` and put the following within it:
 
 ```
-const loadRemote = ({ url, scope, bustRemoteEntryCache }) =>
+const loadRemote = ({ url, scope }) =>
     new Promise((resolve, reject) => {
-        const timestamp = bustRemoteEntryCache ? `?t=${new Date().getTime()}` : '';
-        __webpack_require__.l(
-            `${url}${timestamp}`,
+        __webpack_require__.l(url,
             event => {
                 if (event?.type === 'load') {
                     return resolve();
@@ -302,15 +305,13 @@ const initContainer = async (containerScope) => {
 */
 const importRemote = async ({
     url,
-    remoteName,
     scope,
-    module,
-    bustRemoteEntryCache = false,
+    module
 }) => {
     if (!window[scope]) {
         // Load the remote and initialize the share scope if it's empty
         await Promise.all([
-            loadRemote({ url, scope, bustRemoteEntryCache }),
+            loadRemote({ url, scope }),
             initSharing(),
         ]);
         if (!window[scope]) {
@@ -335,7 +336,6 @@ const importRemote = async ({
 };
 
 export default importRemote;
-
 ```
 
 ## ▪️ Time to run the solution!
