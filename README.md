@@ -338,6 +338,53 @@ const importRemote = async ({
 export default importRemote;
 ```
 
+Now we can update our routes to return each remote instead of a page. Open `routes.jsx` again and lets make the following updates:
+
+```
+import React from "react";
+import { Routes, Route } from "react-router";
+import importRemote from "./dynamic-remotes";
+
+const HomePage = React.lazy(() =>
+  importRemote({
+    url: "http://localhost:3001/remote.js",
+    scope: "remote_home",
+    module: "Application",
+  })
+);
+
+const ListMoviesPage = React.lazy(() =>
+  importRemote({
+    url: "http://localhost:3002/remote.js",
+    scope: "remote_listmovies",
+    module: "Application",
+  })
+);
+
+const ViewMoviePage = React.lazy(() =>
+  importRemote({
+    url: "http://localhost:3003/remote.js",
+    scope: "remote_home",
+    module: "Application",
+  })
+);
+
+const NotFoundPage = () => {
+  return <>Home Page</>;
+};
+
+const Router = () => (
+  <Routes>
+    <Route path="/" element={<HomePage />} />
+    <Route path="/movies" element={<ListMoviesPage />} />
+    <Route path="/movies/:id" element={<ViewMoviePage />} />
+    <Route path="*" element={<NotFoundPage />} />
+  </Routes>
+);
+
+export default Router;
+```
+
 ## ▪️ Time to run the solution!
 
 Its time to run the project! Open a terminal in the root of the solution and type:
