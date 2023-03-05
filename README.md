@@ -241,7 +241,7 @@ Lets now update our `host/src/` file `app.jsx` to use the router we just added:
 
 ```
 import { BrowserRouter } from "react-router-dom";
-import Routing from "./_routing";
+import Routing from "./routes";
 
 const App = () => {
   return (
