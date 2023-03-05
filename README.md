@@ -222,7 +222,7 @@ const ViewMoviePage = ({ id }) => {
 };
 
 const NotFoundPage = () => {
-    return (<>Home Page</>)
+    return (<>Page not found...</>)
 };
 
 const Router = () => (
@@ -370,7 +370,7 @@ const ViewMoviePage = React.lazy(() =>
 );
 
 const NotFoundPage = () => {
-  return <>Home Page</>;
+  return <>Page not found...</>;
 };
 
 const Router = () => (
