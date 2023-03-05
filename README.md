@@ -364,7 +364,7 @@ const ListMoviesPage = React.lazy(() =>
 const ViewMoviePage = React.lazy(() =>
   importRemote({
     url: "http://localhost:3003/remote.js",
-    scope: "remote_home",
+    scope: "remote_viewmovie",
     module: "Application",
   })
 );
