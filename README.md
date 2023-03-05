@@ -96,7 +96,8 @@ mkdir remotes/view-movie
 
 4) Now lets setup our host: First we want to copy down the minimal react mfe template from:
 ```
-https://github.com/cfryerdev/mfe-reactjs-template
+cd host
+git clone https://github.com/cfryerdev/mfe-reactjs-template .
 ```
 _Put this in the `host` folder and take a moment to explore the directory and see whats inside._
 
@@ -106,7 +107,10 @@ _Put this in the `host` folder and take a moment to explore the directory and se
 
 6) Lets copy down the minimal react mfe template again into each of the remote folders. Lets start with the Home remote...
 ```
-https://github.com/cfryerdev/mfe-reactjs-template
+cd ..
+cd remotes
+cd home
+git clone https://github.com/cfryerdev/mfe-reactjs-template .
 ```
 _Put this in the `remotes/home` folder._
 
@@ -116,7 +120,9 @@ _Put this in the `remotes/home` folder._
 
 8) Lets copy down the minimal react mfe template again into each of the remote folders. Lets setup the List Movies remote...
 ```
-https://github.com/cfryerdev/mfe-reactjs-template
+cd ..
+cd list-movies
+git clone https://github.com/cfryerdev/mfe-reactjs-template .
 ```
 _Put this in the `remotes/list-movies` folder._
 
@@ -126,7 +132,9 @@ _Put this in the `remotes/list-movies` folder._
 
 10) Lets copy down the minimal react mfe template again into each of the remote folders. Lets setup the View Movie remote...
 ```
-https://github.com/cfryerdev/mfe-reactjs-template
+cd ..
+cd view-movie
+git clone https://github.com/cfryerdev/mfe-reactjs-template .
 ```
 _Put this in the `remotes/view-movie` folder._
 
