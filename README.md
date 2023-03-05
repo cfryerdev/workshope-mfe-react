@@ -202,7 +202,10 @@ If these are not all returning correctly, re-assess the steps above or look at t
 
 ## ▪️ Building the UI....
 
-For this example, we are going to just use something drop in and simple; bootstrap. Lets open the `host/src/` and add the file `routes.jsx` and add the followings line
+Before we begin, lets make this a little easier on ourselves and ensure that only the host opens in a browser when we load the application stack. We do this by going into each `webpack.config.js` file in each remote (but not the host) and set the `open` property to `false` on line 20.
+
+Next, we are going to just use a simple drop in router; Lets open the `host/src/` and add the file `routes.jsx` and add the followings line:
+
 ```
 import { Routes, Route } from "react-router";
 
@@ -232,6 +235,23 @@ const Routes = () => (
 );
 
 export default Routes;
+```
+
+Lets now update our `host/src/` file `app.jsx` to use the router we just added:
+
+```
+import { BrowserRouter } from "react-router-dom";
+import Routing from "./_routing";
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routing />
+    </BrowserRouter>
+  );
+};
+
+export default App;
 ```
 
 This will give us some routes that we can use to navigate between remotes. Next we need to add a quick utility and add a few pages. Lets start by adding our dynamic loading remotes script. Create a file called `dynamic-remotes.jsx` and put the following within it:
