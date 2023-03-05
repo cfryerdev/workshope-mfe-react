@@ -191,10 +191,10 @@ pnpm start
 
 You should be able to look through the console and see all three are available. If the apps dont open for you, Click the following urls and make sure they display `"React Minimal MFE Template"`:
 
-- [https://localhost:3000/](http://localhost:3000)
-- [https://localhost:3001/](http://localhost:3001)
-- [https://localhost:3002/](http://localhost:3002)
-- [https://localhost:3003/](http://localhost:3003)
+- [http://localhosthttp:3000/](http://localhost:3000)
+- [http://localhosthttp:3001/](http://localhost:3001)
+- [http://localhosthttp:3002/](http://localhost:3002)
+- [http://localhosthttp:3003/](http://localhost:3003)
 
 If these are not all returning correctly, re-assess the steps above or look at the troubleshooting section.
 
@@ -393,7 +393,12 @@ pnpm i
 pnpm start
 ```
 
-It should all spin up in parallel and you can visit: [https://localhost:3000/](https://localhost:3000/)
+It should all spin up in parallel and you can visit: [http://localhosthttp:3000/](http://localhosthttp:3000/)
+
+You can check out each remote from within the host by using: 
+- [http://localhost:3000/](http://localhost:3000)
+- [http://localhost:3000/movies](http://localhost:3000/movies)
+- [http://localhost:3000/movies/67](http://localhost:3000/movies/67)
 
 ## ▪️ Solution Review
 
