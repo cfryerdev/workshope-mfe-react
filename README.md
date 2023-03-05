@@ -183,7 +183,7 @@ packages:
 }
 ```
 
-14) We should now be able to run the project and make sure each stand up correctly:
+14) We should now be able to run the project and make sure each stand up correctly, make sure you do this from the root directory:
 ```
 pnpm i
 pnpm start
