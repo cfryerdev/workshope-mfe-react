@@ -189,7 +189,7 @@ pnpm i
 pnpm start
 ```
 
-You should be able to look through the console and see all three are available. Click the following urls and make sure they display `"React Minimal MFE Template"`:
+You should be able to look through the console and see all three are available. If the apps dont open for you, Click the following urls and make sure they display `"React Minimal MFE Template"`:
 
 - [https://localhost:3000/](http://localhost:3000)
 - [https://localhost:3001/](http://localhost:3001)
