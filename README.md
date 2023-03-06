@@ -416,9 +416,14 @@ You can check out each remote from within the host by using:
 
 Now lets sit and talk about what we just built and the WHY behind the patterns you saw.
 
+## ▪️ Another solution to look at...
+
+Check out a fully functional example with layouts and navigation:
+
+- [https://github.com/cfryerdev/microfrontends-react-js-typescript](https://github.com/cfryerdev/microfrontends-react-js-typescript)
+
 ## ▪️ Common Questions
 Here are some common questions I am often asked:
 
-- **How often or under what circumstances would I create a new host?** Coming soon...
-- **Can I use other frameworks instead of React?** Coming soon...
-- **What if I want to use NextJS or Remix for my host?** Coming soon...
+- **How often or under what circumstances would I create a new host?** When you have a completely unique layout, unique userbase, or different authentication method; you should consider having multiple hosts.
+- **Can I use other frameworks instead of React?** Absolutely, You can use this framework in React, Vue, Angular and even MVC. You can even use packaged frameworks for your host just as NextJS or Remix.
