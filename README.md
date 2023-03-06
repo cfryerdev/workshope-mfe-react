@@ -200,7 +200,7 @@ If these are not all returning correctly, re-assess the steps above or look at t
 
 15) We should be ready to start building our UI and see how it all ties together!
 
-## ▪️ Building the UI....
+## ▪️ Setting up the UI....
 
 Before we begin, lets make this a little easier on ourselves and ensure that only the host opens in a browser when we load the application stack. We do this by going into each `webpack.config.js` file in each remote (but not the host) and set the `open` property to `false` on line 20.
 
@@ -255,11 +255,13 @@ const App = () => {
 export default App;
 ```
 
-This gives us a few pages we can explore by going to the paths above. Lets update each remote's `app.jsx` to return something unique.
+This gives us a few pages we can explore by going to the paths above. Lets update each remote's `app.jsx` to return something unique. This will give us some routes that we can use to navigate between remotes.
 
 ![Mapp.jsx Updates](./docs/app_jsx_updates.png)
 
-This will give us some routes that we can use to navigate between remotes. Next we need to add a quick utility and add a few pages. Lets start by adding our dynamic loading remotes script. Create a file called `dynamic-remotes.jsx` and put the following within it:
+## ▪️ Lets wire it all up...
+
+ Next we need to add a quick utility and add a few pages. Lets start by adding our dynamic loading remotes script. Create a file called `dynamic-remotes.jsx` and put the following within it:
 
 ```
 const loadRemote = ({ url, scope }) =>
@@ -343,8 +345,10 @@ Now we can update our routes to return each remote instead of a page. Open `rout
 ```
 import React from "react";
 import { Routes, Route } from "react-router";
+import { useParams } from "react-router-dom";
 import importRemote from "./dynamic-remotes";
 
+// Home Page
 const HomePage = React.lazy(() =>
   importRemote({
     url: "http://localhost:3001/remote.js",
@@ -353,6 +357,7 @@ const HomePage = React.lazy(() =>
   })
 );
 
+// List Movie Page
 const ListMoviesPage = React.lazy(() =>
   importRemote({
     url: "http://localhost:3002/remote.js",
@@ -361,13 +366,18 @@ const ListMoviesPage = React.lazy(() =>
   })
 );
 
-const ViewMoviePage = React.lazy(() =>
+// View Movie Page
+const ViewMovieRemote = React.lazy(() => 
   importRemote({
     url: "http://localhost:3003/remote.js",
     scope: "remote_viewmovie",
     module: "Application",
   })
 );
+const ViewMoviePage = () => {
+  let { id } = useParams();
+  return (<ViewMovieRemote id={id} />);
+};
 
 const NotFoundPage = () => {
   return <>Page not found...</>;
