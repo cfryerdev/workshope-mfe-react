@@ -259,7 +259,7 @@ This gives us a few pages we can explore by going to the paths above. Lets updat
 
 ![Mapp.jsx Updates](./docs/app_jsx_updates.png)
 
-## ▪️ Lets wire it all up...
+## ▪️ Lets set up Dynamic Remotes ...
 
  Next we need to add a quick utility and add a few pages. Lets start by adding our dynamic loading remotes script. Create a file called `dynamic-remotes.jsx` and put the following within it:
 
@@ -339,6 +339,8 @@ const importRemote = async ({
 
 export default importRemote;
 ```
+
+## ▪️ Lets put it all together!
 
 Now we can update our routes to return each remote instead of a page. Open `routes.jsx` again and lets make the following updates:
 
