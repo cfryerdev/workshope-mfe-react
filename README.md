@@ -207,6 +207,7 @@ Before we begin, lets make this a little easier on ourselves and ensure that onl
 Next, we are going to just use a simple drop in router; Lets open the `host/src/` and add the file `routes.jsx` and add the followings line:
 
 ```
+import React from "react";
 import { Routes, Route } from "react-router";
 
 const HomePage = () => {
